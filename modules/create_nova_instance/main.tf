@@ -10,7 +10,7 @@
 
 resource "openstack_compute_instance_v2" "nova_instance" {
   name            = "${var.instance_name}"
-  flavor_id       = ${var.flavor_id}"
+  flavor_id       = "${var.flavor_id}"
   user_data       = "#cloud-config\npassword: atomic\nchpasswd: {expire: False}\nssh_pwauth: True"
 
   block_device {
@@ -22,10 +22,10 @@ resource "openstack_compute_instance_v2" "nova_instance" {
 	  delete_on_termination = true
   }
   network {
-    name = ${var.network_name1}"
+    name = "${var.network_name1}"
   }
 
   network {
-    name = ${var.network_name1}"
+    name = "${var.network_name1}"
   }
 }
