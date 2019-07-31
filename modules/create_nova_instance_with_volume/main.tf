@@ -1,6 +1,6 @@
 
 # ------------------------------------------------------------------------------
-# DEPLOY A SINGLE NOVA INSTANCE
+# DEPLOY A SINGLE NOVA INSTANCE BOOT FROM VOLUME AND WITH EXTRA BLOCK DEVICE
 # ------------------------------------------------------------------------------
 
 
@@ -25,7 +25,7 @@ resource "openstack_compute_instance_v2" "nova_instance" {
   block_device {
     source_type           = "blank"
     destination_type      = "volume"
-    volume_size           = ${var.extra_volume_size}
+    volume_size           = var.extra_volume_size
     boot_index            = 1
     delete_on_termination = true
   }
