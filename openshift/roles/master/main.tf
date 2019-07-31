@@ -19,7 +19,7 @@ provider "openstack" {
 
 module "create_nova_instance" {
   source = "../../../modules/create_nova_instance"
-  name = "ocp-master01"
+  instance_name = "ocp-master01"
   image_id = "9523d0ea-9ec4-447e-a71e-8be2c74a1228"
   flavor_id = "5bfcf6ad-0da9-4549-88be-2e377dbb67c0"
   network_name1 = "39052a40-7a9a-40b8-b420-5fa8783b85c6"
