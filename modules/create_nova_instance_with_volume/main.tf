@@ -30,10 +30,6 @@ resource "openstack_compute_instance_v2" "nova_instance" {
     delete_on_termination = true
   }
   network {
-    name = "${var.network_name1}"
-  }
-
-  network {
-    name = "${var.network_name1}"
+    name = "${var.network_name}"
   }
 }
