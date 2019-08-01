@@ -11,7 +11,7 @@
 resource "openstack_compute_instance_v2" "nova_instance" {
   name            = "${var.instance_name}"
   flavor_id       = "${var.flavor_id}"
-  user_data       = "#cloud-config\npassword: atomic\nchpasswd: {expire: False}\nssh_pwauth: True"
+  user_data       = "#cloud-config\npassword: 0954349#  \nchpasswd: {expire: False}\nssh_pwauth: True"
 
   block_device {
 	  uuid                  = "${var.image_id}"

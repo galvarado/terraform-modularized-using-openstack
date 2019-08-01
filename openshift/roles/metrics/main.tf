@@ -19,7 +19,7 @@ provider "openstack" {
 
 module "create_nova_instance_with_volume1" {
   source = "../../../modules/create_nova_instance_with_volume"
-  instance_name = "ocp-master01"
+  instance_name = "ocp-metrics01"
   image_id = "9523d0ea-9ec4-447e-a71e-8be2c74a1228"
   flavor_id = "5bfcf6ad-0da9-4549-88be-2e377dbb67c0"
   network_name = "OpenShift Internal Network"
@@ -28,25 +28,7 @@ module "create_nova_instance_with_volume1" {
 
 module "create_nova_instance_with_volume2" {
   source = "../../../modules/create_nova_instance_with_volume"
-  instance_name = "ocp-master02"
-  image_id = "9523d0ea-9ec4-447e-a71e-8be2c74a1228"
-  flavor_id = "5bfcf6ad-0da9-4549-88be-2e377dbb67c0"
-  network_name = "OpenShift Internal Network"
-  extra_volume_size = 100
-}
-
-module "create_nova_instance_with_volume3" {
-  source = "../../../modules/create_nova_instance_with_volume"
-  instance_name = "ocp-master03"
-  image_id = "9523d0ea-9ec4-447e-a71e-8be2c74a1228"
-  flavor_id = "5bfcf6ad-0da9-4549-88be-2e377dbb67c0"
-  network_name = "OpenShift Internal Network"
-  extra_volume_size = 100
-}
-
-module "create_nova_instance_with_volume4" {
-  source = "../../../modules/create_nova_instance_with_volume"
-  instance_name = "ocp-lb01"
+  instance_name = "ocp-metrics01"
   image_id = "9523d0ea-9ec4-447e-a71e-8be2c74a1228"
   flavor_id = "5bfcf6ad-0da9-4549-88be-2e377dbb67c0"
   network_name = "OpenShift Internal Network"

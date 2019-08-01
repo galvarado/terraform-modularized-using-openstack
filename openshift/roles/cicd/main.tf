@@ -19,39 +19,22 @@ provider "openstack" {
 
 module "create_nova_instance_with_volume1" {
   source = "../../../modules/create_nova_instance_with_volume"
-  instance_name = "ocp-master01"
+  instance_name = "ocp-cicd01"
   image_id = "9523d0ea-9ec4-447e-a71e-8be2c74a1228"
-  flavor_id = "5bfcf6ad-0da9-4549-88be-2e377dbb67c0"
+  flavor_id = "86455fff-d6d2-4759-bf3a-2ca374f7f7f9"
   network_name = "OpenShift Internal Network"
   extra_volume_size = 100
 }
 
 module "create_nova_instance_with_volume2" {
   source = "../../../modules/create_nova_instance_with_volume"
-  instance_name = "ocp-master02"
+  instance_name = "ocp-cicd02"
   image_id = "9523d0ea-9ec4-447e-a71e-8be2c74a1228"
-  flavor_id = "5bfcf6ad-0da9-4549-88be-2e377dbb67c0"
+  flavor_id = "86455fff-d6d2-4759-bf3a-2ca374f7f7f9"
   network_name = "OpenShift Internal Network"
   extra_volume_size = 100
 }
 
-module "create_nova_instance_with_volume3" {
-  source = "../../../modules/create_nova_instance_with_volume"
-  instance_name = "ocp-master03"
-  image_id = "9523d0ea-9ec4-447e-a71e-8be2c74a1228"
-  flavor_id = "5bfcf6ad-0da9-4549-88be-2e377dbb67c0"
-  network_name = "OpenShift Internal Network"
-  extra_volume_size = 100
-}
-
-module "create_nova_instance_with_volume4" {
-  source = "../../../modules/create_nova_instance_with_volume"
-  instance_name = "ocp-lb01"
-  image_id = "9523d0ea-9ec4-447e-a71e-8be2c74a1228"
-  flavor_id = "5bfcf6ad-0da9-4549-88be-2e377dbb67c0"
-  network_name = "OpenShift Internal Network"
-  extra_volume_size = 100
-}
 
 
 #openshift-app 3bfbdb81-7f7d-47ce-a907-5688a6729efc
