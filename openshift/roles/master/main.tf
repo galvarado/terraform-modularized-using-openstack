@@ -22,7 +22,7 @@ module "create_nova_instance_with_volume1" {
   instance_name = "ocp-master01"
   image_id = "9523d0ea-9ec4-447e-a71e-8be2c74a1228"
   flavor_id = "5bfcf6ad-0da9-4549-88be-2e377dbb67c0"
-  network_name = "918fdcf8-ef1d-4c19-826d-c18229ce3cea"
+  network_name = "OpenShift Internal Network"
   extra_volume_size = 100
 }
 
@@ -31,7 +31,7 @@ module "create_nova_instance_with_volume2" {
   instance_name = "ocp-master02"
   image_id = "9523d0ea-9ec4-447e-a71e-8be2c74a1228"
   flavor_id = "5bfcf6ad-0da9-4549-88be-2e377dbb67c0"
-  network_name = "918fdcf8-ef1d-4c19-826d-c18229ce3cea"
+  network_name = "OpenShift Internal Network"
   extra_volume_size = 100
 }
 
@@ -40,7 +40,7 @@ module "create_nova_instance_with_volume3" {
   instance_name = "ocp-master03"
   image_id = "9523d0ea-9ec4-447e-a71e-8be2c74a1228"
   flavor_id = "5bfcf6ad-0da9-4549-88be-2e377dbb67c0"
-  network_name = "918fdcf8-ef1d-4c19-826d-c18229ce3cea"
+  network_name = "OpenShift Internal Network"
   extra_volume_size = 100
 }
 
