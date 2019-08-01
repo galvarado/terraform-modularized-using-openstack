@@ -19,7 +19,7 @@ provider "openstack" {
 
 module "create_nova_instance_with_volume1" {
   source = "../../../modules/create_nova_instance_with_volume"
-  instance_name = "ocp-infra01
+  instance_name = "ocp-infra01"
   image_id = "9523d0ea-9ec4-447e-a71e-8be2c74a1228"
   flavor_id = "7e61b521-13cd-41cb-8416-fa5267ea78d2"
   network_name = "OpenShift Internal Network"
