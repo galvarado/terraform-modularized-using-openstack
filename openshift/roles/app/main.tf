@@ -37,7 +37,7 @@ module "create_nova_instance_with_volume2" {
 
 module "create_nova_instance_with_volume3" {
   source = "../../../modules/create_nova_instance_with_volume"
-  instance_name = "ocp-app01"
+  instance_name = "ocp-app03"
   image_id = "9523d0ea-9ec4-447e-a71e-8be2c74a1228"
   flavor_id = "3bfbdb81-7f7d-47ce-a907-5688a6729efc"
   network_name = "OpenShift Internal Network"
@@ -55,7 +55,7 @@ module "create_nova_instance_with_volume4" {
 
 module "create_nova_instance_with_volume5" {
   source = "../../../modules/create_nova_instance_with_volume"
-  instance_name = "ocp-app04"
+  instance_name = "ocp-app05"
   image_id = "9523d0ea-9ec4-447e-a71e-8be2c74a1228"
   flavor_id = "3bfbdb81-7f7d-47ce-a907-5688a6729efc"
   network_name = "OpenShift Internal Network"
